@@ -56,4 +56,9 @@ group :doc do
   gem 'sdoc', '~> 0.4.0'
 end
 EOF
-# gemfileの作成
+
+# bundle install
+bundle exec bundle install
+
+# rspec install
+rails g rspec:install
