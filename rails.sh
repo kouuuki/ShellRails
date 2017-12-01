@@ -1,5 +1,7 @@
-rails new AppName -b
-cd AppName
+APPNAME = "アプリ名"
+
+rails new $APPNAME -b
+cd $APPNAME
 # gemfileの作成
 cat << EOF > Gemfile
 source 'https://rubygems.org'
@@ -62,3 +64,6 @@ bundle exec bundle install
 
 # rspec install
 rails g rspec:install
+
+# devise install
+rails g devise:install
